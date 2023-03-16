@@ -1,0 +1,31 @@
+{
+   "name": "cypress1",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "edge_1280_720": "npx cypress open --browser edge --config viewportWidth=1280,viewportHeight=720",
+      "edge_iphone-x": "npx cypress open --browser edge --config viewportWidth=375,viewportHeight=812",
+      "electron_2560_1600": "npx cypress open --browser electron --config viewportWidth=2560,viewportHeight=1600",
+      "electron_samsung-note9": "npx cypress open --browser electron --config viewportWidth=414,viewportHeight=846",
+      "chrome_1600_1200": "npx cypress open --browser chrome --config viewportWidth=1620,viewportHeight=1200",
+      "chrome_iphone-se2": "npx cypress open --browser chrome --config viewportWidth=375,viewportHeight=667",
+      "config_mobile": "cypress run --config-file cypress.config.js",
+      "config_nout": "cypress run --config-file tests/cypress.config.js",
+      "chrome_config_mobile_headed": "cypress run --browser chrome --config-file cypress.config.js --headed",
+      "chrome_config_nout_headed": "cypress run --browser chrome --config-file tests/cypress.config.js --headed",
+      "electron_config_mobile_headed": "cypress run --browser electron --config-file cypress.config.js --headed",
+      "electron_config_nout_headed": "cypress run --browser electron --config-file tests/cypress.config.js --headed",      
+      "edge_config_mobile_headless": "cypress run --browser edge --config-file cypress.config.js --headless",
+      "edge_config_nout_headless": "cypress run --browser edge --config-file tests/cypress.config.js --headless",
+      "chrome_config_mobile_headless": "cypress run --browser chrome --config-file cypress.config.js --headless",
+      "chrome_config_nout_headless": "cypress run --browser chrome --config-file tests/cypress.config.js --headless"
+    }
+   ,
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "cypress": "^12.7.0"
+   }
+}
